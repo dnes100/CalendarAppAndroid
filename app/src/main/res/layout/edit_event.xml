@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <EditText
+        android:id="@+id/TextName"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:layout_width="fill_parent">
+    </EditText>
+
+    <EditText
+        android:id="@+id/EditStart_Date"
+        android:layout_height="wrap_content"
+        android:hint="start_date"
+        android:inputType="textPersonName"
+        android:layout_width="fill_parent">
+    </EditText>
+
+
+    <EditText
+        android:id="@+id/EditEnd_Date"
+        android:layout_height="wrap_content"
+        android:hint="end_date"
+        android:inputType="textPersonName"
+        android:layout_width="fill_parent">
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="start time"/>
+    <EditText
+        android:id="@+id/EditStart_Time"
+        android:layout_height="wrap_content"
+        android:inputType="datetime"
+        android:layout_width="fill_parent">
+    </EditText>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="end time"/>
+
+    <EditText
+        android:id="@+id/EditEnd_Time"
+        android:layout_height="wrap_content"
+        android:inputType="datetime"
+        android:layout_width="fill_parent">
+    </EditText>
+
+    <EditText
+        android:id="@+id/EditDescription"
+        android:layout_height="wrap_content"
+        android:hint="Description"
+        android:inputType="text"
+        android:layout_width="fill_parent">
+    </EditText>
+
+
+    <Button
+        android:id="@+id/ButtonSendFeedback"
+        android:layout_height="wrap_content"
+        android:text="Edit Event"
+        android:onClick="updateEvent"
+        android:layout_width="fill_parent">
+    </Button>
+
+    <Button
+        android:id="@+id/ButtonDelete"
+        android:layout_height="wrap_content"
+        android:text="Delete Event"
+        android:onClick="DeleteEvent"
+        android:layout_width="fill_parent">
+    </Button>
+
+    <Button
+        android:id="@+id/ButtonExport"
+        android:layout_height="wrap_content"
+        android:text="Export Event"
+        android:onClick="ExportEvent"
+        android:layout_width="fill_parent">
+    </Button>
+
+
+</LinearLayout>
